@@ -98,6 +98,11 @@ template <typename Scalar>
 struct ActivationDataSmooth2NormTpl;
 
 template <typename Scalar>
+class ActivationModelLogBarrierTpl;
+template <typename Scalar>
+struct ActivationDataLogBarrierTpl;
+
+template <typename Scalar>
 class ActivationModel2NormBarrierTpl;
 template <typename Scalar>
 struct ActivationData2NormBarrierTpl;
@@ -215,8 +220,10 @@ typedef ActionDataUnicycleTpl<double> ActionDataUnicycle;
 typedef ActionModelLQRTpl<double> ActionModelLQR;
 typedef ActionDataLQRTpl<double> ActionDataLQR;
 
-typedef DifferentialActionModelAbstractTpl<double> DifferentialActionModelAbstract;
-typedef DifferentialActionDataAbstractTpl<double> DifferentialActionDataAbstract;
+typedef DifferentialActionModelAbstractTpl<double>
+    DifferentialActionModelAbstract;
+typedef DifferentialActionDataAbstractTpl<double>
+    DifferentialActionDataAbstract;
 typedef DifferentialActionModelLQRTpl<double> DifferentialActionModelLQR;
 typedef DifferentialActionDataLQRTpl<double> DifferentialActionDataLQR;
 
@@ -230,10 +237,13 @@ typedef ResidualDataAbstractTpl<double> ResidualDataAbstract;
 typedef ResidualModelControlTpl<double> ResidualModelControl;
 typedef ResidualDataControlTpl<double> ResidualDataControl;
 
-typedef ActivationDataQuadraticBarrierTpl<double> ActivationDataQuadraticBarrier;
-typedef ActivationModelQuadraticBarrierTpl<double> ActivationModelQuadraticBarrier;
+typedef ActivationDataQuadraticBarrierTpl<double>
+    ActivationDataQuadraticBarrier;
+typedef ActivationModelQuadraticBarrierTpl<double>
+    ActivationModelQuadraticBarrier;
 typedef ActivationBoundsTpl<double> ActivationBounds;
-typedef ActivationModelWeightedQuadraticBarrierTpl<double> ActivationModelWeightedQuadraticBarrier;
+typedef ActivationModelWeightedQuadraticBarrierTpl<double>
+    ActivationModelWeightedQuadraticBarrier;
 typedef ActivationModelQuadTpl<double> ActivationModelQuad;
 typedef ActivationModelQuadFlatExpTpl<double> ActivationModelQuadFlatExp;
 typedef ActivationDataQuadFlatExpTpl<double> ActivationDataQuadFlatExp;
@@ -241,8 +251,12 @@ typedef ActivationModelQuadFlatLogTpl<double> ActivationModelQuadFlatLog;
 typedef ActivationDataQuadFlatLogTpl<double> ActivationDataQuadFlatLog;
 typedef ActivationModelWeightedQuadTpl<double> ActivationModelWeightedQuad;
 typedef ActivationDataWeightedQuadTpl<double> ActivationDataWeightedQuad;
-DEPRECATED("Use ActivationModelSmooth1Norm", typedef ActivationModelSmooth1NormTpl<double> ActivationModelSmoothAbs;)
-DEPRECATED("Use ActivationDataSmooth1Norm", typedef ActivationDataSmooth1NormTpl<double> ActivationDataSmoothAbs;)
+DEPRECATED(
+    "Use ActivationModelSmooth1Norm",
+    typedef ActivationModelSmooth1NormTpl<double> ActivationModelSmoothAbs;)
+DEPRECATED(
+    "Use ActivationDataSmooth1Norm",
+    typedef ActivationDataSmooth1NormTpl<double> ActivationDataSmoothAbs;)
 typedef ActivationModelSmooth1NormTpl<double> ActivationModelSmooth1Norm;
 typedef ActivationDataSmooth1NormTpl<double> ActivationDataSmooth1Norm;
 typedef ActivationModelSmooth2NormTpl<double> ActivationModelSmooth2Norm;
@@ -274,13 +288,15 @@ typedef CostModelSumTpl<double> CostModelSum;
 typedef CostDataSumTpl<double> CostDataSum;
 typedef CostModelResidualTpl<double> CostModelResidual;
 typedef CostDataResidualTpl<double> CostDataResidual;
-DEPRECATED("Use ResidualModelControl with CostModelResidual", typedef CostModelControlTpl<double> CostModelControl;)
+DEPRECATED("Use ResidualModelControl with CostModelResidual",
+           typedef CostModelControlTpl<double> CostModelControl;)
 
 typedef ShootingProblemTpl<double> ShootingProblem;
 
 typedef ActionModelNumDiffTpl<double> ActionModelNumDiff;
 typedef ActionDataNumDiffTpl<double> ActionDataNumDiff;
-typedef DifferentialActionModelNumDiffTpl<double> DifferentialActionModelNumDiff;
+typedef DifferentialActionModelNumDiffTpl<double>
+    DifferentialActionModelNumDiff;
 typedef DifferentialActionDataNumDiffTpl<double> DifferentialActionDataNumDiff;
 typedef ActivationModelNumDiffTpl<double> ActivationModelNumDiff;
 typedef ActivationDataNumDiffTpl<double> ActivationDataNumDiff;
