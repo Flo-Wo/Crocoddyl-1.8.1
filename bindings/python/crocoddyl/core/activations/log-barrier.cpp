@@ -1,13 +1,16 @@
-#include "crocoddyl/core/activations/log-barrier.hpp"
+
+
+// clang-format off
 
 #include "python/crocoddyl/core/activation-base.hpp"
 #include "python/crocoddyl/core/core.hpp"
+#include "crocoddyl/core/activations/log-barrier.hpp"
 namespace crocoddyl {
 namespace python {
 
 void exposeActivationLogBarrier() {
-  boost::python::register_ptr_to_python<
-      boost::shared_ptr<ActivationModelLogBarrier> >();
+  boost::python::register_ptr_to_python <
+  boost::shared_ptr < ActivationModelLogBarrier>>();
 
   bp::class_<ActivationModelLogBarrier, bp::bases<ActivationModelAbstract> >(
       "ActivationModelLogBarrier", "Log Barrier function.\n\n",
