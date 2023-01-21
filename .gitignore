@@ -1,0 +1,14 @@
+*.pyc
+*.pyd
+*.pyo
+*~
+*.orig
+*.ipynb_checkpoints
+build*/*
+_build*
+*.aux
+*.log
+*.pdf
+.clang-format
+.vscode/
+*#*#
